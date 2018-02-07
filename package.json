@@ -1,0 +1,32 @@
+{
+  "name": "dumbson",
+  "version": "0.1.0",
+  "description": "A dumb way to serialize JS objects to query string",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakobz/dumbson.git"
+  },
+  "keywords": [
+    "json",
+    "querystring",
+    "query",
+    "string",
+    "serialize",
+    "parameters",
+    "url"
+  ],
+  "author": "Yakov Zhmurov",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jakobz/dumbson/issues"
+  },
+  "homepage": "https://github.com/jakobz/dumbson#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0"
+  }
+}
