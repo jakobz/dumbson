@@ -5,11 +5,12 @@ var replacements = {
     to:   '()-!*.~'
 };
 
+var hash = {};
+replacements.from.split('').forEach((c, n) => hash[c] = replacements.to[n]);
+replacements.to.split('').forEach((c, n) => hash[c] = replacements.from[n]);
+
 function replace(src) {
     src = src || "";
-    var hash = {};
-    replacements.from.split('').forEach((c, n) => hash[c] = replacements.to[n]);
-    replacements.to.split('').forEach((c, n) => hash[c] = replacements.from[n]);
 
     var chars = src.split('');
     chars.forEach((c, n) => {

@@ -14,7 +14,7 @@ encodeURI(dumbson): -~name~*~John~.~value~*15!
 This looks retarded, however:
 - it gives better URLs, than just putting plain or base64 JSON into query string
 - it works as reliable as plain JSON
-- there is strong guarantee that ```serialize(parse(dumbson)) = dumbson```
+- ```serialize(parse(dumbson)) == dumbson```, which hard to guarantee for more complex methods
 
 ## Usage
 
