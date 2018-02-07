@@ -22,6 +22,17 @@ describe('stringify', function() {
         { name: null }
     ];
 
+    it('test cases for readme', function() {
+        var obj = { name: "John", value: 15 };
+        
+        var objJson = JSON.stringify(obj);        
+        var objDumbson = dumbson.stringify(obj);
+        console.log('json: ', objJson);
+        console.log('dumbson: ', objDumbson);
+        console.log('encodeURI(json): ', encodeURI(objJson));
+        console.log('encodeURI(dumbson): ', encodeURI(objDumbson));
+    })
+   
     testCases.forEach(function(testCase) {
         it('parse/stringify case ' + JSON.stringify(testCase), function() {
 
